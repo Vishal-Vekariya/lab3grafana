@@ -19,6 +19,7 @@ This report outlines the steps taken to install Grafana on an Ubuntu server, con
    ```bash
    sudo apt-get install -y apt-transport-https software-properties-common wget
    ```
+![Image](https://github.com/user-attachments/assets/ddfcefd4-dfa2-4ee9-8739-4b9e81922822)
 
 ### **Task 2: Install Grafana**
 1. Add Grafana’s official APT repository:
@@ -46,6 +47,8 @@ This report outlines the steps taken to install Grafana on an Ubuntu server, con
    ```bash
    sudo ufw allow 3000/tcp
    ```
+![Image](https://github.com/user-attachments/assets/656ad4ae-2b23-416f-ae79-af335d0a0f79)
+![Image](https://github.com/user-attachments/assets/c1e00ead-2200-44fc-80e7-430b64535e03)
 
 ### **Task 3: Connect Grafana to Azure Monitor**
 1. Enable Managed Identity in the Grafana VM.
@@ -69,6 +72,7 @@ This report outlines the steps taken to install Grafana on an Ubuntu server, con
    - Default login: **admin/admin**
 6. Navigate to **Configuration > Data Sources** and add **Azure Monitor** as a data source.
 7. Select **Managed Identity Authentication** and test the connection.
+![Image](https://github.com/user-attachments/assets/dcdf5c5b-f2d1-4aee-9aa8-4bd7ce0fd03f)
 
 ### **Task 4: Create a Dashboard in Grafana**
 1. Click the **+** icon and select **Dashboard**.
@@ -80,6 +84,7 @@ This report outlines the steps taken to install Grafana on an Ubuntu server, con
    - Colors
    - Labels
 6. Save the panel and dashboard.
+![Image](https://github.com/user-attachments/assets/899f827d-ebed-4a35-903a-55853c2e6567)
 
 ## **Conclusion**
 This lab successfully demonstrated the installation of Grafana, connection to Azure Monitor, and the creation of a performance monitoring dashboard for an Ubuntu server. The setup provides real-time insights into system performance, aiding in proactive monitoring and optimization.
